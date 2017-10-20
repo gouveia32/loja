@@ -13,16 +13,23 @@ namespace loja.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Servico()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Serviço.";
 
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Localizacao()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Localizaçao.";
+
+            return View();
+        }
+
+        public ActionResult Contato()
+        {
+            ViewBag.Message = "Contato.";
 
             return View();
         }

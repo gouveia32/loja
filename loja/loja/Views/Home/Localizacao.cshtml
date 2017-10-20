@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Localização";
+}
+
+<h2>Localização</h2>
+<div class="container">
+    <div class="alert alert-info">
+        Rua Dr. José Luciano Siqueira, 335 - Suissa Aracaju/Se
+    </div>
+
+    <!-- Text -->
+    <div class="sixteen columns">
+        <br /><br />
+        <iframe src="https://www.google.com/maps/embed/v1/place?q=Ponto%20Fino%20Bordados%20-%20Centro%2C%20Aracaju%20-%20SE%2C%20Brasil&key=AIzaSyDLsf-7mFa3zxc8CPKzP71Q_76SS-Fa11A" height="450" width="100%" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+    </div>
+</div>
+
+
+<% content_for :js do %>
+$( window ).load(function() {
+   $(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+});
+<% end %>
